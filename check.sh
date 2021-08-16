@@ -90,6 +90,7 @@ if [[ "$VERSION" =~ ^go1\.[0-9]+(\.[0-9]+)?$ ]]; then
     MSG='New Go version *(`'$VERSION'`)* -- [available here]('$DL')'
     echo "MESSAGE: '$MSG'"
     mmpost "$MSG"
+    echo ""
     touch $SRC/.cache/$VERSION.notify_done
   else
     echo "SKIPPING NOTIFY"
