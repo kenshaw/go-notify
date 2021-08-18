@@ -87,7 +87,7 @@ echo "VERSION: $VERSION"
 
 if [[ "$VERSION" =~ ^go1\.[0-9]+(\.[0-9]+)?$ ]]; then
   if [[ ! -f $SRC/.cache/$VERSION.notify_done ]]; then
-    MSG='New Go version *(`'$VERSION'`)* -- [available here]('$DL')'
+    MSG='# New Go version '$VERSION'!\\n[Download here]('$DL')'
     echo "MESSAGE: '$MSG'"
     mmpost "$MSG"
     echo ""
