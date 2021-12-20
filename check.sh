@@ -67,7 +67,7 @@ if [[ -z "$NOTIFY_TEAMID" || -z "$NOTIFY_CHANNELID" ]]; then
   exit 1
 fi
 
-DL=https://golang.org/dl/
+DL=https://go.dev/dl/
 PLATFORM=linux
 ARCH=amd64
 
