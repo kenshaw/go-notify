@@ -9,8 +9,8 @@ SRC=$(realpath $(cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd))
 NOTIFY_TEAM=dev
 NOTIFY_CHANNEL=town-square
 
-HOST=$(jq -r '.["go-notify"].instanceUrl' $HOME/.config/mmctl)
-TOKEN=$(jq -r '.["go-notify"].authToken' $HOME/.config/mmctl)
+HOST=$(jq -r '.["go-notify"].instanceUrl' $HOME/.config/mmctl/config)
+TOKEN=$(jq -r '.["go-notify"].authToken' $HOME/.config/mmctl/config)
 
 mmcurl() {
   local method=$1
